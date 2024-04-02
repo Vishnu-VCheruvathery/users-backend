@@ -9,7 +9,7 @@ const {MONGO_URL} = process.env
 const app = express()
 app.use(express.json())
 app.use(cors({
-    origin: ['http://localhost:5173', 'https://user-system-rd53.onrender.com']
+    origin: ['http://localhost:5173', 'https://users-frontend.netlify.app/']
 }))
 app.use('/api'  ,UserRouter)
 
